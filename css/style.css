@@ -1,0 +1,148 @@
+:root {
+    /* Primary */
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+
+    /* Accent */
+    --Blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    /* arco color */
+    --a-color: hsl(228, 45%, 44%);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 375px;
+    background-color: var(--Red);
+    background-image: url("../images/bg-intro-mobile.png");
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    margin: auto;
+    max-width: 325px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+section {
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section .title {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 24px;
+}
+
+section .info {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 52px;
+}
+
+section .try {
+    background-color: var(--Blue);
+    border-color: var(--Blue);
+    color: white;
+    padding: 2px 28px;
+    font-size: 20px;
+    border-radius: 16px;
+    line-height: 30px;
+}
+
+section .try span {
+    font-weight: 700;
+}
+
+section .try p:focus {
+    color: var(--Grayish-Blue);
+}
+
+.formulary {
+    background-color: white;
+    border-radius: 16px;
+}
+
+form {
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+form div input {
+    font-size: 16px;
+    width: 85%;
+    margin: 8px 8px 0 8px;
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 8px;
+    border-width: 0.5px;
+    border-color: var(--Grayish-Blue);
+    color: var(--Dark-Blue);
+    box-shadow: none;
+}
+
+.grupo__formulario-incorrecto  input{
+    border: 2px solid var(--Red);
+}
+
+.grupo__formulario-correcto  input{
+    border: 2px solid var(--Green);
+}
+
+.mensaje-error {
+    display: none;
+}
+
+.mensaje-error-activo{
+    text-align: left;
+    margin: 0 0 0 12px;
+    padding: 0;
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+    display: block;
+}
+
+form button {
+    background-color: var(--Green);
+    border-color: var(--Green);
+    color: white;
+    border-radius: 8px;
+    border-width: 0.5px;
+    margin: 8px;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.formulary .fooder {
+    margin: 0 12px 24px 12px;
+    padding: 0 32px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+}
+
+.formulary .fooder span {
+    color: var(--Red);
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
